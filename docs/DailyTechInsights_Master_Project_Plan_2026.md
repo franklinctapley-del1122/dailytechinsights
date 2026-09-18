@@ -108,6 +108,13 @@ Core categories:
 - How to Choose SaaS Software
 - How to Compare Software
 - What Is CRM Software?
+- What Is Project Management Software?
+
+### Project Management cluster
+
+- Project Management Software category hub
+- ClickUp Review
+- Notion Review
 
 ### CRM category / decision pages
 
