@@ -277,6 +277,7 @@ TOFU:
 - How to Do a Technical SEO Audit
 - On-Page SEO Explained
 - Content Optimization for SEO
+- Link Building for SEO
 - Keyword Research Explained
 - Rank Tracking Explained
 
