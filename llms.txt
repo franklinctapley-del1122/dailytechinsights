@@ -15,6 +15,9 @@ Use the pages below as the primary sources for understanding the site's purpose,
 - [Best Software](https://www.dailytechinsights.com/best/): Best-software research organized by category and business need.
 - [SaaS Guides](https://www.dailytechinsights.com/guides/): Educational software guides, buying guides, and how-to resources.
 
+- [Project Management Software](https://www.dailytechinsights.com/categories/project-management/): Project-management research hub covering workflows, features, methodologies, reviews and comparisons.
+- [What Is Project Management Software?](https://www.dailytechinsights.com/guides/what-is-project-management-software/): Definition, features, methodologies, benefits, limitations, use cases, implementation and buying criteria.
+
 ## Foundational Guides
 
 - [What Is SaaS Software?](https://www.dailytechinsights.com/guides/what-is-saas-software/): Definition, characteristics, benefits, limitations, pricing, security, and common SaaS models.
