@@ -276,6 +276,7 @@ TOFU:
 - SEO Software Features
 - How to Do a Technical SEO Audit
 - On-Page SEO Explained
+- Content Optimization for SEO
 - Keyword Research Explained
 - Rank Tracking Explained
 
