@@ -35,6 +35,10 @@ Use the pages below as the primary sources for understanding the site's purpose,
 
 - [ClickUp vs Notion](https://www.dailytechinsights.com/comparisons/clickup-vs-notion/): Project management comparison covering tasks, dependencies, views, documentation, automation, AI and workflow fit.
 
+- [Best Project Management Software](https://www.dailytechinsights.com/best/project-management-software/): Use-case based research for comparing project-management tools.
+- [ClickUp Alternatives](https://www.dailytechinsights.com/alternatives/clickup-alternatives/): Alternative project-management tools organized around switching reasons and workflow fit.
+- [Notion Alternatives](https://www.dailytechinsights.com/alternatives/notion-alternatives/): Alternative project/workspace tools organized around workflow, documentation, project management and switching needs.
+
 ## Software Reviews
 
 - [Notion Review](https://www.dailytechinsights.com/reviews/notion-review/): Review of Notion's features, pricing, usability, integrations, strengths, limitations, and alternatives.
