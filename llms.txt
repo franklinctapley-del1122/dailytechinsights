@@ -10,6 +10,7 @@ Use the pages below as the primary sources for understanding the site's purpose,
 - [SaaS Categories](https://www.dailytechinsights.com/categories/): Browse AI, marketing, SEO, CRM, sales, productivity, project management, and business software topics.
 - [SaaS Reviews](https://www.dailytechinsights.com/reviews/): Individual software reviews covering features, pricing, usability, integrations, pros, limitations, and fit.
 - [Software Comparisons](https://www.dailytechinsights.com/comparisons/): Focused software comparison resources organized around meaningful decision criteria.
+- [Pipedrive vs HubSpot](https://www.dailytechinsights.com/comparisons/pipedrive-vs-hubspot/): CRM comparison covering product scope, sales workflow, pricing, automation, integrations, AI and practical fit.
 - [SaaS Alternatives](https://www.dailytechinsights.com/alternatives/): Alternative-software research based on workflow, features, pricing, integrations, and fit.
 - [Best Software](https://www.dailytechinsights.com/best/): Best-software research organized by category and business need.
 - [SaaS Guides](https://www.dailytechinsights.com/guides/): Educational software guides, buying guides, and how-to resources.
