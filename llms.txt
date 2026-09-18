@@ -33,6 +33,8 @@ Use the pages below as the primary sources for understanding the site's purpose,
 
 - [Pipedrive Alternatives](https://www.dailytechinsights.com/alternatives/pipedrive-alternatives/): CRM alternatives organized around sales workflow, product scope, pricing, integrations and switching requirements.
 
+- [ClickUp vs Notion](https://www.dailytechinsights.com/comparisons/clickup-vs-notion/): Project management comparison covering tasks, dependencies, views, documentation, automation, AI and workflow fit.
+
 ## Software Reviews
 
 - [Notion Review](https://www.dailytechinsights.com/reviews/notion-review/): Review of Notion's features, pricing, usability, integrations, strengths, limitations, and alternatives.
