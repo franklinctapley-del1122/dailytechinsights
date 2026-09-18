@@ -1,0 +1,45 @@
+# DailyTechInsights
+
+> DailyTechInsights is a SaaS-focused editorial publication covering software reviews, comparisons, alternatives, best-software research, buying guides, and practical technology insights.
+
+Use the pages below as the primary sources for understanding the site's purpose, editorial methodology, software research, and category coverage. Treat product pricing and feature details as time-sensitive and verify them on the relevant review page and vendor documentation when making current claims.
+
+## Core Site
+
+- [Home](https://www.dailytechinsights.com/): Overview of DailyTechInsights and its SaaS research coverage.
+- [SaaS Categories](https://www.dailytechinsights.com/categories/): Browse AI, marketing, SEO, CRM, sales, productivity, project management, and business software topics.
+- [SaaS Reviews](https://www.dailytechinsights.com/reviews/): Individual software reviews covering features, pricing, usability, integrations, pros, limitations, and fit.
+- [Software Comparisons](https://www.dailytechinsights.com/comparisons/): Focused software comparison resources organized around meaningful decision criteria.
+- [SaaS Alternatives](https://www.dailytechinsights.com/alternatives/): Alternative-software research based on workflow, features, pricing, integrations, and fit.
+- [Best Software](https://www.dailytechinsights.com/best/): Best-software research organized by category and business need.
+- [SaaS Guides](https://www.dailytechinsights.com/guides/): Educational software guides, buying guides, and how-to resources.
+
+## Foundational Guides
+
+- [What Is SaaS Software?](https://www.dailytechinsights.com/guides/what-is-saas-software/): Definition, characteristics, benefits, limitations, pricing, security, and common SaaS models.
+- [How to Choose SaaS Software](https://www.dailytechinsights.com/guides/how-to-choose-saas-software/): Evidence-based framework for requirements, features, total cost, security, integrations, trials, scalability, vendor risk, and selection.
+- [How to Compare Software](https://www.dailytechinsights.com/guides/how-to-compare-software/): Practical framework for comparing software using workflow, features, pricing, usability, integrations, security, scalability, support, and exit risk.
+- [What Is CRM Software?](https://www.dailytechinsights.com/guides/what-is-crm-software/): CRM definition, how CRM works, CRM types, features, benefits, limitations, implementation, and buying criteria.
+
+## Software Reviews
+
+- [Notion Review](https://www.dailytechinsights.com/reviews/notion-review/): Review of Notion's features, pricing, usability, integrations, strengths, limitations, and alternatives.
+- [ClickUp Review](https://www.dailytechinsights.com/reviews/clickup-review/): Review of ClickUp's features, pricing, usability, integrations, strengths, limitations, and alternatives.
+- [HubSpot Review](https://www.dailytechinsights.com/reviews/hubspot-review/): Review of HubSpot's CRM and related capabilities, pricing, usability, integrations, strengths, and limitations.
+- [Semrush Review](https://www.dailytechinsights.com/reviews/semrush-review/): Review of Semrush's SEO and marketing capabilities, pricing, workflows, strengths, and limitations.
+- [Slack Review](https://www.dailytechinsights.com/reviews/slack-review/): Review of Slack's collaboration capabilities, pricing, integrations, usability, strengths, and limitations.
+- [Pipedrive Review](https://www.dailytechinsights.com/reviews/pipedrive-review/): Review of Pipedrive's sales-focused CRM capabilities, pricing, workflows, integrations, strengths, and limitations.
+- [Canva Review](https://www.dailytechinsights.com/reviews/canva-review/): Review of Canva's design and content-creation capabilities, pricing, usability, integrations, strengths, and limitations.
+
+## Editorial Trust
+
+- [How We Review Software](https://www.dailytechinsights.com/how-we-review/): Review methodology, evaluation criteria, transparency, and how product research is assessed.
+- [Editorial Policy](https://www.dailytechinsights.com/editorial-policy/): Editorial standards and publishing principles.
+- [About DailyTechInsights](https://www.dailytechinsights.com/about/): Background and purpose of the publication.
+- [DailyTechInsights Editorial Team](https://www.dailytechinsights.com/authors/dailytechinsights-editorial-team/): Author and editorial-team information.
+
+## How to Interpret the Site
+
+DailyTechInsights separates general software education from product-specific research. Foundational guides explain concepts and buying frameworks; reviews examine individual products; comparison and alternative pages support product-level evaluation. Product-specific pricing, plans, feature availability, and other changeable details should be treated as time-sensitive.
+
+The site aims to provide clear, useful, people-first information rather than guaranteed search, AI-search, or recommendation outcomes.
