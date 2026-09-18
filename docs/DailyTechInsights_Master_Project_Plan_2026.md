@@ -109,6 +109,7 @@ Core categories:
 - How to Compare Software
 - What Is CRM Software?
 - What Is Project Management Software?
+- What Is SEO Software?
 
 ### Project Management cluster
 
@@ -117,6 +118,15 @@ Core categories:
 - Project Management Software category hub
 - ClickUp Review
 - Notion Review
+
+### Marketing & SEO cluster — first wave
+
+- Marketing & SEO Software category hub
+- What Is SEO Software?
+- Semrush vs Ahrefs
+- Best SEO Software
+- Semrush Alternatives
+- Semrush Review
 
 ### CRM category / decision pages
 
@@ -272,6 +282,14 @@ BOFU:
 - Semrush Review
 - Best SEO Software
 - Semrush Alternatives
+
+Current first-wave cluster:
+- Marketing & SEO category
+- What Is SEO Software?
+- Semrush vs Ahrefs
+- Best SEO Software
+- Semrush Alternatives
+- Semrush Review
 
 ### Cluster D — Productivity & Collaboration
 
@@ -650,14 +668,14 @@ Every new article should answer:
 
 The immediate roadmap after the September 18, 2026 state is:
 
-1. Expand CRM with the next comparison/use-case layer.
-2. Start Project Management cluster.
-3. Expand Marketing/SEO cluster.
-4. Expand Marketing/SEO cluster.
-5. Expand AI & Automation cluster.
-6. Continue review/comparison/alternative interlinking.
+1. Complete the next Marketing & SEO TOFU layer, starting with Marketing Automation.
+2. Add another SEO comparison/use-case page where differentiation is strong.
+3. Strengthen Semrush/SEO internal links and refresh the existing Semrush review against current vendor documentation.
+4. Start the Productivity & Collaboration cluster.
+5. Then expand AI & Automation with a small, tightly connected first wave.
+6. Continue review/comparison/alternative interlinking and keep sitemap + `llms.txt` synchronized.
 7. Maintain GEO/AEO/LLM discovery and technical SEO.
-8. Start systematic Search Console-driven content refinement once enough performance data accumulates.
+8. Begin systematic Search Console-driven refinement once enough performance data accumulates.
 
 ## 23. Important Principle
 
