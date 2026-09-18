@@ -22,6 +22,14 @@ Use the pages below as the primary sources for understanding the site's purpose,
 - [How to Compare Software](https://www.dailytechinsights.com/guides/how-to-compare-software/): Practical framework for comparing software using workflow, features, pricing, usability, integrations, security, scalability, support, and exit risk.
 - [What Is CRM Software?](https://www.dailytechinsights.com/guides/what-is-crm-software/): CRM definition, how CRM works, CRM types, features, benefits, limitations, implementation, and buying criteria.
 
+- [CRM & Sales Software](https://www.dailytechinsights.com/categories/crm-sales/): CRM and sales software research hub.
+
+- [Best CRM Software](https://www.dailytechinsights.com/best/crm-software/): Use-case driven CRM research covering workflow, scope, integrations, reporting, AI, governance and total cost.
+
+- [HubSpot Alternatives](https://www.dailytechinsights.com/alternatives/hubspot-alternatives/): CRM alternatives organized around workflow, pricing, product scope, integrations and switching requirements.
+
+- [Pipedrive Alternatives](https://www.dailytechinsights.com/alternatives/pipedrive-alternatives/): CRM alternatives organized around sales workflow, product scope, pricing, integrations and switching requirements.
+
 ## Software Reviews
 
 - [Notion Review](https://www.dailytechinsights.com/reviews/notion-review/): Review of Notion's features, pricing, usability, integrations, strengths, limitations, and alternatives.
