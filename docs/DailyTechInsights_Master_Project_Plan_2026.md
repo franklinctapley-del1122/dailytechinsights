@@ -124,6 +124,7 @@ Core categories:
 - Marketing & SEO Software category hub
 - What Is SEO Software?
 - What Is Marketing Automation?
+- Keyword Research for SEO
 - Semrush vs Ahrefs
 - Best SEO Software
 - Semrush Alternatives
