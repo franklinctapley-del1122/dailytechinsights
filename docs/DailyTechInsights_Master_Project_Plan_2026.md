@@ -109,6 +109,13 @@ Core categories:
 - How to Compare Software
 - What Is CRM Software?
 
+### CRM category / decision pages
+
+- CRM & Sales Software category hub
+- Best CRM Software: Compare Options by Business Need
+- HubSpot Alternatives
+- Pipedrive Alternatives
+
 ### CRM comparison
 
 - Pipedrive vs HubSpot
@@ -125,15 +132,23 @@ Core categories:
 
 ## 5. Latest CRM Cluster
 
+The CRM foundation is now substantially connected across category, TOFU, MOFU, BOFU, best-software and alternative paths.
+
 Current CRM topical structure:
 
 ```
 What Is CRM Software?
         ↓
+CRM Category
+      ↓
+What Is CRM Software?
+      ↓
 Pipedrive vs HubSpot
-      ↙       ↘
-Pipedrive     HubSpot
-  Review        Review
+   ↙      ↓      ↘
+Pipedrive  Best CRM  HubSpot
+  Review     Guide     Review
+    ↓          ↓         ↓
+Pipedrive Alt.       HubSpot Alt.
 ```
 
 Purpose:
@@ -143,7 +158,7 @@ Purpose:
 - BOFU/product research: detailed individual reviews.
 - Future BOFU/alternative paths: CRM alternatives and best-CRM pages.
 
-Next CRM expansion should include additional educational topics, comparisons, alternatives and use-case pages rather than publishing random CRM articles.
+CRM foundation pages are now built. Next CRM expansion should add a second/third comparison cluster, deeper use-case guides, additional verified product reviews, and more alternatives only where there is enough useful differentiation.
 
 ## 6. GEO / AEO / LLM Discovery
 
@@ -626,9 +641,9 @@ Every new article should answer:
 
 The immediate roadmap after the September 18, 2026 state is:
 
-1. Expand CRM cluster.
-2. Build CRM alternatives and Best CRM pages.
-3. Expand Project Management cluster.
+1. Expand CRM with the next comparison/use-case layer.
+2. Start Project Management cluster.
+3. Expand Marketing/SEO cluster.
 4. Expand Marketing/SEO cluster.
 5. Expand AI & Automation cluster.
 6. Continue review/comparison/alternative interlinking.
