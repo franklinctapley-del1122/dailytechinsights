@@ -275,6 +275,7 @@ TOFU:
 - What Is Marketing Automation?
 - SEO Software Features
 - How to Do a Technical SEO Audit
+- On-Page SEO Explained
 - Keyword Research Explained
 - Rank Tracking Explained
 
