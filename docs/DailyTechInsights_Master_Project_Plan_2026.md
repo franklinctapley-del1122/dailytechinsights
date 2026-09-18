@@ -119,10 +119,11 @@ Core categories:
 - ClickUp Review
 - Notion Review
 
-### Marketing & SEO cluster — first wave
+### Marketing & SEO cluster — current wave
 
 - Marketing & SEO Software category hub
 - What Is SEO Software?
+- What Is Marketing Automation?
 - Semrush vs Ahrefs
 - Best SEO Software
 - Semrush Alternatives
