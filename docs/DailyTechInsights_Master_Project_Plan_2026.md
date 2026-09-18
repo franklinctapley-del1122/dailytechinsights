@@ -112,6 +112,8 @@ Core categories:
 
 ### Project Management cluster
 
+- ClickUp vs Notion comparison
+
 - Project Management Software category hub
 - ClickUp Review
 - Notion Review
