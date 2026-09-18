@@ -279,6 +279,7 @@ TOFU:
 - Content Optimization for SEO
 - Link Building for SEO
 - SEO Competitor Analysis
+- Search Intent for SEO
 - Keyword Research Explained
 - Rank Tracking Explained
 
