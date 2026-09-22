@@ -128,6 +128,7 @@ Core categories:
 - Rank Tracking for SEO
 - Technical SEO Explained
 - Semrush vs Ahrefs
+- SEO Software Comparison Framework
 - Best SEO Software
 - Semrush Alternatives
 - Semrush Review
