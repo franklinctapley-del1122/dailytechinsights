@@ -1,0 +1,20 @@
+# Netlify configuration for DailyTechInsights
+# Canonical domain: https://www.dailytechinsights.com
+
+[[redirects]]
+  from = "https://dailytechinsights.com/*"
+  to = "https://www.dailytechinsights.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*/index.html"
+  to = "/:splat/"
+  status = 301
+  force = true
