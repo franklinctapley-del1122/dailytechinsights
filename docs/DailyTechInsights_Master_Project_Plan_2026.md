@@ -4,7 +4,7 @@
 **Domain:** https://www.dailytechinsights.com/  
 **Repository:** franklinctapley-del1122/dailytechinsights  
 **Primary branch:** main  
-**Plan date:** September 18, 2026
+**Plan date:** October 21, 2026
 
 ## 1. Project Mission
 
@@ -109,10 +109,13 @@ Core categories:
 - How to Compare Software
 - What Is CRM Software?
 - What Is Project Management Software?
+- Project Management vs Task Management
 - What Is SEO Software?
 
 ### Project Management cluster
 
+- What Is Project Management Software?
+- Project Management vs Task Management (published October 21, 2026; connected to the guides hub, project-management category hub, existing project-management guide, best-software hub, sitemap and llms.txt)
 - ClickUp vs Notion comparison
 
 - Project Management Software category hub
@@ -677,16 +680,18 @@ Every new article should answer:
 
 ## 22. Current Next Priority
 
-The immediate roadmap after the September 18, 2026 state is:
+The roadmap has advanced since the September 18, 2026 plan snapshot. The Marketing Automation guide and the Project Management vs Task Management guide are now published and connected to relevant hubs and discovery files.
 
-1. Complete the next Marketing & SEO TOFU layer, starting with Marketing Automation.
-2. Add another SEO comparison/use-case page where differentiation is strong.
-3. Strengthen Semrush/SEO internal links and refresh the existing Semrush review against current vendor documentation.
-4. Start the Productivity & Collaboration cluster.
-5. Then expand AI & Automation with a small, tightly connected first wave.
-6. Continue review/comparison/alternative interlinking and keep sitemap + `llms.txt` synchronized.
-7. Maintain GEO/AEO/LLM discovery and technical SEO.
-8. Begin systematic Search Console-driven refinement once enough performance data accumulates.
+Next priorities as of October 21, 2026:
+
+1. Complete the remaining Project Management TOFU layer with a practical Project Management Software Features guide, then consider a project-management software selection guide if it adds distinct value.
+2. Strengthen Semrush/SEO internal links and refresh the existing Semrush review against current vendor documentation.
+3. Add another SEO comparison or use-case page only where SERP intent and product differentiation justify it.
+4. Start or deepen the Productivity & Collaboration cluster with tightly connected guide, comparison and product pages.
+5. Expand AI & Automation with a small, connected first wave after the current clusters are strengthened.
+6. Keep all new pages connected through relevant internal links, XML sitemap, canonical metadata, structured data and `llms.txt`.
+7. Maintain GEO/AEO/LLM discovery through clear definitions, answer-first sections, grounded sources and accurate entity relationships—without promising rankings or AI citations.
+8. Begin systematic Search Console-driven refinement as enough performance data accumulates.
 
 ## 23. Important Principle
 
