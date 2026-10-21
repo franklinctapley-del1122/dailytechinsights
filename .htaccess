@@ -1,0 +1,70 @@
+# ==========================================
+# DailyTechInsights - Static HTML SEO rules
+# Canonical: https://www.dailytechinsights.com/
+# ==========================================
+
+DirectoryIndex index.html
+Options -Indexes
+
+RewriteEngine On
+
+# 1) Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# 2) Force WWW
+RewriteCond %{HTTP_HOST} ^dailytechinsights\.com$ [NC]
+RewriteRule ^ https://www.dailytechinsights.com%{REQUEST_URI} [R=301,L]
+
+# 3) Remove /index.html anywhere
+RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]
+
+# 4) Force trailing slash ONLY for real directories
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule ^(.+[^/])$ $1/ [R=301,L]
+
+# 5) If someone hits a file with trailing slash, remove it
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_URI} .+/$
+RewriteRule ^(.+?)/$ /$1 [R=301,L]
+
+# ---- MIME types (important for sitemap) ----
+AddType application/xml .xml
+AddType text/plain .txt
+
+# ---- Disable caching for sitemap & robots (helps GSC sometimes) ----
+<IfModule mod_headers.c>
+  <FilesMatch "^(sitemap\.xml|robots\.txt)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+</IfModule>
+
+# 6) Basic caching (optional)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 30 days"
+  ExpiresByType application/javascript "access plus 30 days"
+  ExpiresByType text/javascript "access plus 30 days"
+  ExpiresByType image/jpg "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/gif "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType image/x-icon "access plus 30 days"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# 7) Compression (optional)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript application/javascript application/json application/xml image/svg+xml
+</IfModule>
+
+# Protect .htaccess
+<Files ".ht*">
+  Require all denied
+</Files>
