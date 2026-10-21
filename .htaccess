@@ -1,40 +1,36 @@
-# ==========================================
-# DailyTechInsights - Static HTML SEO rules
-# Canonical: https://www.dailytechinsights.com/
-# ==========================================
+# DailyTechInsights — Apache-only rules
+# Canonical host: https://www.dailytechinsights.com/
+# NOTE: .htaccess is ignored by Vercel. See vercel.json for deployed redirects.
 
 DirectoryIndex index.html
 Options -Indexes
-
 RewriteEngine On
 
-# 1) Force HTTPS
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+# 1) Canonicalize known domain to HTTPS + WWW in one redirect.
+RewriteCond %{HTTP_HOST} ^(www\.)?dailytechinsights\.com$ [NC]
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^www\.dailytechinsights\.com$ [NC]
+RewriteRule ^ https://www.dailytechinsights.com%{REQUEST_URI} [R=301,L,NE]
 
-# 2) Force WWW
-RewriteCond %{HTTP_HOST} ^dailytechinsights\.com$ [NC]
-RewriteRule ^ https://www.dailytechinsights.com%{REQUEST_URI} [R=301,L]
+# 2) Redirect explicit index.html URLs to their directory URL.
+# THE_REQUEST prevents redirecting internal subrequests.
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html(?:[?\s]) [NC]
+RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L,NE]
 
-# 3) Remove /index.html anywhere
-RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]
-
-# 4) Force trailing slash ONLY for real directories
+# 3) Add trailing slash only for existing directories.
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteCond %{REQUEST_URI} !/$
-RewriteRule ^(.+[^/])$ $1/ [R=301,L]
+RewriteRule ^(.+[^/])$ $1/ [R=301,L,NE]
 
-# 5) If someone hits a file with trailing slash, remove it
-RewriteCond %{REQUEST_FILENAME} -f
-RewriteCond %{REQUEST_URI} .+/$
-RewriteRule ^(.+?)/$ /$1 [R=301,L]
+# 4) Remove a trailing slash from common static-file URLs.
+RewriteCond %{REQUEST_URI} \.(?:css|js|mjs|map|jpg|jpeg|png|gif|webp|avif|svg|ico|xml|txt|pdf|json|woff|woff2|ttf|eot)/$ [NC]
+RewriteRule ^(.+?)/$ /$1 [R=301,L,NE]
 
-# ---- MIME types (important for sitemap) ----
+# MIME types
 AddType application/xml .xml
 AddType text/plain .txt
 
-# ---- Disable caching for sitemap & robots (helps GSC sometimes) ----
+# Avoid stale sitemap/robots responses in Apache caches.
 <IfModule mod_headers.c>
   <FilesMatch "^(sitemap\.xml|robots\.txt)$">
     Header set Cache-Control "no-cache, no-store, must-revalidate"
@@ -43,28 +39,27 @@ AddType text/plain .txt
   </FilesMatch>
 </IfModule>
 
-# 6) Basic caching (optional)
+# Static asset caching (HTML stays revalidatable).
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType text/css "access plus 30 days"
   ExpiresByType application/javascript "access plus 30 days"
   ExpiresByType text/javascript "access plus 30 days"
-  ExpiresByType image/jpg "access plus 30 days"
   ExpiresByType image/jpeg "access plus 30 days"
   ExpiresByType image/png "access plus 30 days"
   ExpiresByType image/gif "access plus 30 days"
   ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/avif "access plus 30 days"
   ExpiresByType image/svg+xml "access plus 30 days"
   ExpiresByType image/x-icon "access plus 30 days"
-  ExpiresByType text/html "access plus 0 seconds"
 </IfModule>
 
-# 7) Compression (optional)
+# Compression (only when Apache's module is available).
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript application/javascript application/json application/xml image/svg+xml
 </IfModule>
 
-# Protect .htaccess
-<Files ".ht*">
+# Prevent direct access to .ht* files.
+<FilesMatch "^\.ht">
   Require all denied
-</Files>
+</FilesMatch>
