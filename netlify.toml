@@ -2,10 +2,11 @@
 # Canonical domain: https://www.dailytechinsights.com
 
 [[redirects]]
-  from = "https://dailytechinsights.com/*"
+  from = "/*"
   to = "https://www.dailytechinsights.com/:splat"
   status = 301
   force = true
+  conditions = {Host = ["dailytechinsights.com"]}
 
 [[redirects]]
   from = "/index.html"
