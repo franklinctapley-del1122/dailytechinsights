@@ -46,7 +46,9 @@ export function getLegacyPage(id: PageId): LegacyPageData {
 
 export function getLegacyMetadata(id: PageId) {
   const page = getLegacyPage(id);
-  const previewNoindex = process.env.DTI_PREVIEW_NOINDEX === "true";
+  // Vercel sets VERCEL_ENV=preview for preview deployments; keep them out of search even if
+  // the project-level DTI_PREVIEW_NOINDEX variable has not been configured.
+  const previewNoindex = process.env.DTI_PREVIEW_NOINDEX === "true" || process.env.VERCEL_ENV === "preview";
   const index = !previewNoindex && !/noindex/i.test(page.robots);
   const follow = !previewNoindex && !/nofollow/i.test(page.robots);
   return {
