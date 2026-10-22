@@ -1,0 +1,2 @@
+import { getLegacyPage, type PageId } from "@/lib/legacy";
+export default function LegacyPage({id}:{id:PageId}) { const page=getLegacyPage(id); return <>{page.styles?<style dangerouslySetInnerHTML={{__html:page.styles}}/>:null}{page.jsonLd.map((schema,index)=><script key={index} type="application/ld+json" dangerouslySetInnerHTML={{__html:schema}}/>)}<div className="legacy-document" dangerouslySetInnerHTML={{__html:page.body}}/></>; }
