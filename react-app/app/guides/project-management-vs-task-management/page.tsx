@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import data from "@/content/project-management-vs-task-management.json";
 import { LegacyPage } from "@/components/legacy-page";
+import { stageRobots } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Project Management vs Task Management",
   description: "Compare project management vs task management, see real-world examples, understand key differences, and choose the right workflow and software for your team.",
   alternates: { canonical: "/guides/project-management-vs-task-management/" },
-  robots: { index: true, follow: true },
+  robots: stageRobots,
   openGraph: {
     type: "article",
     title: "Project Management vs Task Management | DailyTechInsights",
