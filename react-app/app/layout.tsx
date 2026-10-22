@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { stageRobots } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.dailytechinsights.com"),
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   },
   description:
     "Independent SaaS reviews, software comparisons, alternatives, best software guides, and practical technology insights.",
-  robots: { index: true, follow: true },
+  robots: stageRobots,
   openGraph: {
     type: "website",
     siteName: "DailyTechInsights",
