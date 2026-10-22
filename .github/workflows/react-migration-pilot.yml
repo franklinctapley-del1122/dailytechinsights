@@ -1,0 +1,30 @@
+name: React migration pilot build
+
+on:
+  push:
+    branches: ['feature/react-migration-pilot']
+    paths:
+      - 'react-app/**'
+      - '.github/workflows/react-migration-pilot.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'react-app/**'
+      - '.github/workflows/react-migration-pilot.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: react-app
+    env:
+      DTI_PREVIEW_NOINDEX: 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - run: npm run typecheck
+      - run: npm run build
