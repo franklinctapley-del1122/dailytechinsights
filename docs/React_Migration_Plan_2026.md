@@ -1,6 +1,6 @@
 # DailyTechInsights React Migration Plan
 
-**Status:** Planning and audit only — production files unchanged  
+**Status:** Phase 1 implementation in progress — isolated React foundation added; build and QA not yet verified  
 **Prepared:** 2026-10-22  
 **Repository:** https://github.com/franklinctapley-del1122/dailytechinsights  
 **Production domain:** https://www.dailytechinsights.com/  
@@ -13,7 +13,7 @@ Build a separate React version while the existing static HTML site remains the p
 
 Use Next.js rather than a client-only SPA because this is an SEO-focused editorial website. Generate static HTML for each route, preserve current URL shapes (including trailing slashes), and make sure meaningful page content and metadata are present in the initial HTML response.
 
-This plan authorizes isolated planning and staging work only. No production cutover is authorized.
+This plan authorizes isolated implementation and staging work only. No production cutover is authorized. The initial React foundation now lives under `react/` on the `feature/react-migration-foundation` branch and is tracked in draft PR #1; build and browser QA remain outstanding.
 
 ## 2. Audit of the current repository
 
