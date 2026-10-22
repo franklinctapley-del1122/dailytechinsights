@@ -94,11 +94,16 @@ export function getLegacyPage(slug: string[] = []): LegacyPage | null {
 }
 
 export function legacyMetadata(page: LegacyPage): Metadata {
+  // Preview builds are non-indexable by default. Explicitly opt in only for an approved production build.
+  const robots: Metadata["robots"] = process.env.NEXT_PUBLIC_SITE_STAGE === "production"
+    ? page.robots
+    : { index: false, follow: false };
+
   return {
     title: page.title,
     description: page.description || undefined,
     alternates: { canonical: page.canonical },
-    robots: page.robots,
+    robots,
     openGraph: {
       type: page.openGraphType === "article" ? "article" : "website",
       siteName: "DailyTechInsights",
