@@ -76,6 +76,7 @@ Use the pages below as the primary sources for understanding the site's purpose,
 - [Slack Review](https://www.dailytechinsights.com/reviews/slack-review/): Review of Slack's collaboration capabilities, pricing, integrations, usability, strengths, and limitations.
 - [Pipedrive Review](https://www.dailytechinsights.com/reviews/pipedrive-review/): Review of Pipedrive's sales-focused CRM capabilities, pricing, workflows, integrations, strengths, and limitations.
 - [Canva Review](https://www.dailytechinsights.com/reviews/canva-review/): Review of Canva's design and content-creation capabilities, pricing, usability, integrations, strengths, and limitations.
+- [Salesforce Review](https://www.dailytechinsights.com/reviews/salesforce-review/): Assessment of Salesforce Sales Cloud features, published pricing, AI capabilities, customization, implementation trade-offs, strengths, limitations and alternatives.
 
 ## Editorial Trust
 
