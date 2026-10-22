@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { stageRobots } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "SaaS Reviews",
