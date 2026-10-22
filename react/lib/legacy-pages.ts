@@ -18,6 +18,7 @@ export type LegacyPage = {
   bodyHtml: string;
   styles: string[];
   structuredData: string[];
+  openGraphType: string;
   openGraphTitle?: string;
   openGraphDescription?: string;
   twitterTitle?: string;
@@ -84,6 +85,7 @@ export function getLegacyPage(slug: string[] = []): LegacyPage | null {
     bodyHtml: body.html() || "",
     styles,
     structuredData,
+    openGraphType: $('meta[property="og:type"]').attr("content") || "website",
     openGraphTitle: $('meta[property="og:title"]').attr("content"),
     openGraphDescription: $('meta[property="og:description"]').attr("content"),
     twitterTitle: $('meta[name="twitter:title"]').attr("content"),
@@ -98,7 +100,7 @@ export function legacyMetadata(page: LegacyPage): Metadata {
     alternates: { canonical: page.canonical },
     robots: page.robots,
     openGraph: {
-      type: "website",
+      type: page.openGraphType === "article" ? "article" : "website",
       siteName: "DailyTechInsights",
       title: page.openGraphTitle || page.title,
       description: page.openGraphDescription || page.description,
