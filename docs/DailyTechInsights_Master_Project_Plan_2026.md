@@ -101,6 +101,7 @@ Core categories:
 - Slack Review
 - Pipedrive Review
 - Canva Review
+- Salesforce Review (added October 22, 2026; connected to CRM category, reviews hub, comparison/alternatives cluster, sitemap and llms.txt)
 
 ### Foundational guides
 
@@ -682,7 +683,7 @@ Every new article should answer:
 
 The roadmap has advanced since the September 18, 2026 plan snapshot. The Marketing Automation guide and the Project Management vs Task Management guide are now published and connected to relevant hubs and discovery files.
 
-Next priorities as of October 21, 2026:
+Next priorities as of October 22, 2026 (Salesforce Review is now published):
 
 1. Complete the remaining Project Management TOFU layer with a practical Project Management Software Features guide, then consider a project-management software selection guide if it adds distinct value.
 2. Strengthen Semrush/SEO internal links and refresh the existing Semrush review against current vendor documentation.
