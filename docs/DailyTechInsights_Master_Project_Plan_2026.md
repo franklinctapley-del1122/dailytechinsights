@@ -64,7 +64,7 @@ Core categories:
 - Responsive desktop, tablet and mobile layouts.
 - Global navigation connecting the main content hubs.
 - Review template created and upgraded for production use.
-- Review template is noindex/nofollow so it is not treated as an indexable article.
+- Review pages should remain indexable by default unless a specific URL is intentionally excluded. Do not apply `noindex` to review articles or templates globally; verify the rendered robots directive and canonical on representative pages before release.
 - Breadcrumb navigation implemented across major content types.
 
 ### SEO foundation
