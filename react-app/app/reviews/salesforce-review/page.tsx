@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   title: "Salesforce Review 2026: Features, Pricing & Alternatives",
   description: "Salesforce review covering Sales Cloud features, 2026 pricing, AI, automation, reporting, implementation trade-offs, best-fit teams and alternatives.",
   alternates: { canonical: "/reviews/salesforce-review/" },
-  robots: { index: true, follow: true },
+  robots: stageRobots,
   openGraph: {
     type: "article",
-    title: "Salesforce Review 2026: Features, Pricing & Alternatives | DailyTechInsights",
+    title: "Salesforce Review 2026: Features, Pricing & Alternatives",
     description: "A practical assessment of Salesforce Sales Cloud features, published pricing, strengths, limitations and business fit.",
     url: "/reviews/salesforce-review/",
   },
