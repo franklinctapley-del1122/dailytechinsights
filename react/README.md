@@ -26,7 +26,7 @@ Static output is written to `out/`. Do not commit `node_modules`, `.next`, or `o
 
 ## Staging deployment
 
-Create a separate Netlify site or deploy-preview configuration for this branch. Do not attach `dailytechinsights.com` or `www.dailytechinsights.com` to the staging site. Use `react` as the base directory, `npm run build` as the build command, and `out` as the publish directory, subject to the current Netlify account's deploy-credit status.
+Create a separate Netlify site or deploy-preview configuration for this branch. Do not attach `dailytechinsights.com` or `www.dailytechinsights.com` to the staging site. Use `react` as the base directory, `npm run build` as the build command, and `out` as the publish directory, subject to the current Netlify account's deploy-credit status. Preview builds are `noindex,nofollow` by default; only set `NEXT_PUBLIC_SITE_STAGE=production` after explicit approval and after all release gates pass.
 
 The root `netlify.toml` and production DNS/domain settings are intentionally untouched.
 
