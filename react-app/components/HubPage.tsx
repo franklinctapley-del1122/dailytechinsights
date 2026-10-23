@@ -7,7 +7,7 @@ type HubConfig = { eyebrow: string; title: string; accent: string; description: 
 const sharedTopics = [
   { label: "CRM software", href: "/categories/crm-sales/" },
   { label: "Marketing tools", href: "/categories/marketing-seo/" },
-  { label: "Project management", href: "/guides/project-management-vs-task-management/" },
+  { label: "Project management", href: "/categories/project-management/" },
   { label: "Productivity software", href: "/categories/productivity/" },
   { label: "Salesforce review", href: "/reviews/salesforce-review/" },
   { label: "Software reviews", href: "/reviews/" },
