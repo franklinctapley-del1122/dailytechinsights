@@ -5,6 +5,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
 const primaryMenuLabels = ["Reviews", "Categories", "Comparisons", "Alternatives", "Best Software", "Guides"];
+const primaryMenuPaths = ["reviews", "categories", "comparisons", "alternatives", "best", "guides"];
 
 function childNodes(node: any): any[] {
   return Array.isArray(node?.children) ? node.children : [];
@@ -22,12 +23,15 @@ function linksOf(node: any): string[] {
 
 function isLegacyPrimaryMenu(node: any): boolean {
   if (node?.type !== "tag" || !["header", "nav", "div"].includes(node.name)) return false;
-  const links = linksOf(node);
-  const text = textOf(node).toLowerCase();
+  const links = linksOf(node).map((href) => href.toLowerCase().replace(/index\.html(?:[?#].*)?$/, ""));
+  const text = textOf(node).toLowerCase().replace(/\s+/g, " ");
   const matchedLabels = primaryMenuLabels.filter((label) => text.includes(label.toLowerCase()));
-  const matchedRoutes = ["/reviews/", "/categories/", "/comparisons/", "/alternatives/", "/best/", "/guides/"]
-    .filter((route) => links.some((href) => href.replace(/index\.html$/i, "").includes(route)));
-  return matchedLabels.length >= 5 && matchedRoutes.length >= 5;
+  const matchedPaths = primaryMenuPaths.filter((path) =>
+    links.some((href) => new RegExp(`(?:^|/)\${path}(?:/|[?#]|$)`).test(href.replace(/^https?:\/\/[^/]+/, "")))
+  );
+  // Only remove a wrapper that contains the complete old site menu, not
+  // article headings or individual content links.
+  return matchedLabels.length >= 5 && matchedPaths.length >= 5;
 }
 
 export default function LegacyPage({ id }: { id: PageId }) {
