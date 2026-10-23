@@ -27,7 +27,7 @@ function isLegacyPrimaryMenu(node: any): boolean {
   const text = textOf(node).toLowerCase().replace(/\s+/g, " ");
   const matchedLabels = primaryMenuLabels.filter((label) => text.includes(label.toLowerCase()));
   const matchedPaths = primaryMenuPaths.filter((path) =>
-    links.some((href) => new RegExp(`(?:^|/)\${path}(?:/|[?#]|$)`).test(href.replace(/^https?:\/\/[^/]+/, "")))
+    links.some((href) => new RegExp(`(?:^|/)${path}(?:/|[?#]|$)`).test(href.replace(/^https?:\/\/[^/]+/, "")))
   );
   // Only remove a wrapper that contains the complete old site menu, not
   // article headings or individual content links.
