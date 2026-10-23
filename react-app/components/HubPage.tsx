@@ -224,6 +224,22 @@ export default function HubPage({ id }: { id: string }) {
               <a className="hub-card__link" href={card.href}>{card.cta} <span aria-hidden="true">→</span></a>
             </article>)}
           </div>
+          {id === "reviews" ? (
+            <section className="hub-review-method" aria-labelledby="hub-review-method-heading">
+              <div className="hub-review-method__intro">
+                <div className="hub-section-kicker">OUR EVALUATION FRAMEWORK</div>
+                <h2 id="hub-review-method-heading">What a useful SaaS review should help you decide</h2>
+                <p>Feature lists alone do not tell you whether a tool is worth adopting. We focus on the trade-offs that affect real software decisions and distinguish documented product information from editorial assessment.</p>
+              </div>
+              <div className="hub-review-method__grid">
+                <article><h3>Pricing and total cost</h3><p>Check plan tiers, billing terms, seat or usage limits, add-ons, implementation costs, and which features require an upgrade.</p></article>
+                <article><h3>Features and workflow fit</h3><p>Match core capabilities to the job your team needs done. Separate essential features from extras and consider setup effort and everyday usability.</p></article>
+                <article><h3>Integrations and constraints</h3><p>Look for the connections your existing stack needs, along with relevant limits around data, permissions, reporting, scale, and administration.</p></article>
+                <article><h3>Alternatives and trade-offs</h3><p>Compare realistic alternatives against the same needs and budget. A strong choice for one team may be too complex, limited, or expensive for another.</p></article>
+              </div>
+              <p className="hub-review-method__note">Research transparency matters: we do not imply hands-on testing unless the relevant review says it was performed. Product features and pricing can change, so verify purchase-critical details with the vendor. Read our <a href="/how-we-review/">review methodology</a>, <a href="/editorial-policy/">editorial policy</a>, and <a href="/affiliate-disclosure/">affiliate disclosure</a>.</p>
+            </section>
+          ) : null}
           <section className="hub-topic-panel" aria-labelledby={`topics-${id}`}>
             <div><div className="hub-section-kicker">EXPLORE FURTHER</div><h2 id={`topics-${id}`}>{config.topicsTitle}</h2><p>Follow a relevant path to explore related reviews, comparisons, alternatives, and guides.</p></div>
             <div className="hub-topic-links">{config.topics.map((topic) => <a href={topic.href} key={topic.label}>{topic.label}<span aria-hidden="true">↗</span></a>)}</div>
