@@ -32,13 +32,13 @@ export default function ModernHome() {
         <div className="hero-glow hero-glow-two" aria-hidden="true" />
         <div className="hero-inner">
           <div className="eyebrow"><span className="eyebrow-dot" /> CLARITY FOR YOUR NEXT SOFTWARE DECISION</div>
-          <h1>Find your next favorite tool. <span>Work smarter.</span></h1>
-          <p className="hero-copy">Make your next software decision feel easy. Explore thoughtful SaaS reviews, clear comparisons, and practical guides made for real business needs.</p>
+          <h1>Make Better Software Decisions <span>with DailyTechInsights</span></h1>
+          <p className="hero-copy">Compare software with a clearer view of fit, trade-offs, and cost. Explore SaaS reviews, side-by-side comparisons, alternatives, and practical guides for business decisions.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="/reviews/">Explore software reviews <span aria-hidden="true">→</span></a>
             <a className="button button-secondary" href="/guides/project-management-vs-task-management/">Read practical guides</a>
           </div>
-          <div className="hero-proof"><span className="proof-icon">✓</span> Practical research <span className="proof-separator">·</span> Clear comparisons <span className="proof-separator">·</span> Business-focused advice</div><div className="hero-floating-tags" aria-label="Topics covered"><span>✦ AI tools</span><span>↗ Marketing</span><span>◎ CRM & sales</span></div>
+          <div className="hero-proof"><span className="proof-icon">✓</span> Decision-focused research <span className="proof-separator">·</span> Clear trade-offs <span className="proof-separator">·</span> Transparent editorial standards</div><div className="hero-floating-tags" aria-label="Topics covered"><span>✦ AI tools</span><span>↗ Marketing</span><span>◎ CRM & sales</span></div>
           <div className="product-window" aria-label="A preview of software research topics">
             <div className="window-top"><div className="window-dots"><i /><i /><i /></div><span>DAILYTECHINSIGHTS / DISCOVER</span><span className="window-status"><b /> Research library</span></div>
             <div className="window-body">
@@ -102,6 +102,19 @@ export default function ModernHome() {
             <div className="featured-copy"><h3>Project Management vs. Task Management</h3><p>Understand the difference and decide which approach fits the work your team needs to do.</p><span className="text-link">Read the guide <span>→</span></span></div>
           </a>
         </div>
+      </section>
+
+      <section className="modern-section featured-section" aria-labelledby="decision-process-title">
+        <div className="section-heading">
+          <div><div className="section-eyebrow">A PRACTICAL WAY TO EVALUATE SOFTWARE</div><h2 id="decision-process-title">Choose by fit, not hype.</h2></div>
+          <p>Use a repeatable checklist before committing to a tool. The right choice depends on your team's actual workflow—not just a long feature list.</p>
+        </div>
+        <div className="category-grid">
+          <article className="category-card"><span className="category-icon">01</span><span className="category-card-title">Define the job</span><span className="category-detail">Write down the problem, who will use the tool, and the outcome you need.</span></article>
+          <article className="category-card"><span className="category-icon">02</span><span className="category-card-title">Check the trade-offs</span><span className="category-detail">Compare essential features, ease of adoption, integrations, support, and likely total cost.</span></article>
+          <article className="category-card"><span className="category-icon">03</span><span className="category-card-title">Verify important claims</span><span className="category-detail">Confirm current pricing and capabilities with vendor documentation before buying; plans can change.</span></article>
+        </div>
+        <p className="category-detail" style={{ marginTop: "1.5rem" }}>Our editorial content is research-led. We distinguish documented product information from analysis and do not imply hands-on testing unless a page explicitly says it was performed. Read our <a href="/about/">about page</a> and <a href="/editorial-policy/">editorial policy</a> for more about our approach.</p>
       </section>
 
       <section className="modern-bottom-cta">
