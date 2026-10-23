@@ -199,7 +199,7 @@ export default function ModernHome() {
         <a className="button button-light" href="/reviews/">Explore the library <span aria-hidden="true">→</span></a>
       </section>
 
-      <footer className="modern-footer"><a className="modern-brand footer-brand" href="/"><span className="brand-mark">d</span><span>DailyTech<span className="brand-accent">Insights</span></span></a><p>Practical SaaS research for smarter business decisions.</p><div><a href="/reviews/">Reviews</a><a href="/guides/project-management-vs-task-management/">Guides</a><a href="#categories">Categories</a></div><small>© {new Date().getFullYear()} DailyTechInsights. Research before you choose.</small></footer>
+      <SiteFooter />
     </main>
   );
 }
