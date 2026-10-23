@@ -11,8 +11,20 @@ const categories = [
 ];
 
 export default function ModernHome() {
+  const homeSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.dailytechinsights.com/#home",
+    url: "https://www.dailytechinsights.com/",
+    name: "DailyTechInsights | SaaS Reviews, Software Comparisons & Guides",
+    description: "Make informed software decisions with practical SaaS reviews, comparisons, alternatives, and actionable business technology guides.",
+    isPartOf: { "@id": "https://www.dailytechinsights.com/#website" },
+    about: { "@type": "Thing", name: "SaaS reviews and business software selection" },
+    inLanguage: "en",
+  };
   return (
     <main className="modern-home">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }} />
       <SiteHeader />
 
       <section className="modern-hero">
