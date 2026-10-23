@@ -171,8 +171,37 @@ const configs: Record<string, HubConfig> = {
 export default function HubPage({ id }: { id: string }) {
   const config = configs[id];
   if (!config) return null;
+  const siteUrl = "https://www.dailytechinsights.com";
+  const hubUrl = `${siteUrl}/${id}/`;
+  const hubSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": hubUrl + "#webpage",
+    name: config.title + " " + config.accent + " | DailyTechInsights",
+    url: hubUrl,
+    description: config.description,
+    isPartOf: { "@id": siteUrl + "/#website" },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: config.cards.map((card, index) => ({
+        "@type": "ListItem", position: index + 1, name: card.title,
+        url: siteUrl + card.href, description: card.description,
+      })),
+    },
+    inLanguage: "en",
+  };
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl + "/" },
+      { "@type": "ListItem", position: 2, name: config.title + " " + config.accent, item: hubUrl },
+    ],
+  };
   return (
     <div className="hub-page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(hubSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SiteHeader />
       <main>
         <section className="hub-hero">
