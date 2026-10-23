@@ -1,0 +1,5 @@
+# DailyTechInsights
+
+> LLM discovery compatibility entry point. The maintained agent-oriented site index is /llms.txt.
+
+Please use [DailyTechInsights llms.txt](https://www.dailytechinsights.com/llms.txt) as the canonical LLM-oriented index for this website. It contains curated links to core guides, reviews, comparison resources, alternatives, best-software research, and editorial methodology.
