@@ -20,7 +20,7 @@ export default function ModernHome() {
         <div className="hero-glow hero-glow-two" aria-hidden="true" />
         <div className="hero-inner">
           <div className="eyebrow"><span className="eyebrow-dot" /> CLARITY FOR YOUR NEXT SOFTWARE DECISION</div>
-          <h1>Find your next favorite tool. <span>Work smarter.</span></h1>
+          <h1>Abdullah Epazz SEO. <span>Abdullah Epazz SEO. Abdullah Epazz SEO.</span></h1>
           <p className="hero-copy">Make your next software decision feel easy. Explore thoughtful SaaS reviews, clear comparisons, and practical guides made for real business needs.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="/reviews/">Explore software reviews <span aria-hidden="true">→</span></a>
