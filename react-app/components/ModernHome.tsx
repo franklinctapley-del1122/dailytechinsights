@@ -29,13 +29,13 @@ export default function ModernHome() {
         <div className="hero-glow hero-glow-two" aria-hidden="true" />
         <div className="hero-inner">
           <div className="eyebrow"><span className="eyebrow-dot" /> CLARITY FOR YOUR NEXT SOFTWARE DECISION</div>
-          <h1>Choose software with <span>confidence.</span></h1>
-          <p className="hero-copy">Independent SaaS reviews, practical guides, and clear comparisons to help you find the right tools for the way you work.</p>
+          <h1>Find your next favorite tool. <span>Work smarter.</span></h1>
+          <p className="hero-copy">Make your next software decision feel easy. Explore thoughtful SaaS reviews, clear comparisons, and practical guides made for real business needs.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="/reviews/">Explore software reviews <span aria-hidden="true">→</span></a>
             <a className="button button-secondary" href="/guides/project-management-vs-task-management/">Read practical guides</a>
           </div>
-          <div className="hero-proof"><span className="proof-icon">✓</span> Practical research <span className="proof-separator">·</span> Clear comparisons <span className="proof-separator">·</span> Business-focused advice</div>
+          <div className="hero-proof"><span className="proof-icon">✓</span> Practical research <span className="proof-separator">·</span> Clear comparisons <span className="proof-separator">·</span> Business-focused advice</div><div className="hero-floating-tags" aria-label="Topics covered"><span>✦ AI tools</span><span>↗ Marketing</span><span>◎ CRM & sales</span></div>
           <div className="product-window" aria-label="A preview of software research topics">
             <div className="window-top"><div className="window-dots"><i /><i /><i /></div><span>DAILYTECHINSIGHTS / DISCOVER</span><span className="window-status"><b /> Research library</span></div>
             <div className="window-body">
@@ -63,6 +63,22 @@ export default function ModernHome() {
         </div>
         <div className="category-grid">
           {categories.map((category) => <a className="category-card" href={category.href} key={category.title}><span className="category-icon">{category.icon}</span><span className="category-card-title">{category.title}<span className="category-arrow">↗</span></span><span className="category-detail">{category.detail}</span></a>)}
+        </div>
+      </section>
+
+      <section className="why-section" aria-labelledby="why-title">
+        <div className="why-inner">
+          <div className="why-copy">
+            <div className="section-eyebrow">YOUR SHORTCUT TO SMARTER CHOICES</div>
+            <h2 id="why-title">Less searching.<br /><span>More confident decisions.</span></h2>
+            <p>Software should solve problems, not create more confusion. We help you understand what tools do, who they suit, and what to consider before you commit.</p>
+            <a className="why-link" href="/reviews/">Start exploring <span aria-hidden="true">→</span></a>
+          </div>
+          <div className="why-points">
+            <div className="why-point"><span className="why-point-icon why-purple">✦</span><div><h3>Clear, useful explanations</h3><p>Understand features and workflows without getting lost in jargon.</p></div></div>
+            <div className="why-point"><span className="why-point-icon why-coral">↔</span><div><h3>Comparisons that make sense</h3><p>See the differences that matter when choosing a tool.</p></div></div>
+            <div className="why-point"><span className="why-point-icon why-mint">✓</span><div><h3>Advice built around your work</h3><p>Focus on fit, practical needs, and the job you want software to do.</p></div></div>
+          </div>
         </div>
       </section>
 
