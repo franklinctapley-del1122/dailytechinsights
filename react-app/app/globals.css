@@ -220,3 +220,13 @@
 .guide-next-steps>div a{display:inline-flex;align-items:center;gap:8px;padding:10px 13px;border:1px solid #dce4f3;border-radius:9px;background:#fff;color:#2c3c59;font-size:12px;font-weight:750;text-decoration:none}
 .guide-next-steps>div a:hover{border-color:#315bea;color:#315bea}
 @media(max-width:700px){.guide-article-page{padding:0 15px 46px}.guide-article-shell{padding-top:17px}.guide-article-shell h1{font-size:clamp(31px,9vw,42px);letter-spacing:-1.2px}.guide-article-shell p,.guide-article-shell li{font-size:15px;line-height:1.8}.guide-article-shell h2{margin-top:32px}.guide-article-shell th,.guide-article-shell td{padding:9px;font-size:12px}.guide-next-steps{padding:22px 18px}.guide-next-steps>div{display:grid}.guide-next-steps>div a{justify-content:space-between}}
+
+
+/* Windsor.ai review article support */
+.article-lede{font-size:1.18rem;line-height:1.8;color:#34445f;font-weight:500}
+.article-table-wrap{width:100%;overflow-x:auto;margin:18px 0 24px;border:1px solid #e0e7f1;border-radius:12px;background:#fff}
+.article-table-wrap table{width:100%;min-width:620px;border-collapse:collapse;margin:0}
+.article-table-wrap th,.article-table-wrap td{padding:13px 15px;text-align:left;vertical-align:top;border-bottom:1px solid #e8edf5;line-height:1.65}
+.article-table-wrap th{background:#f5f7fb;color:#24324b;font-weight:750}
+.article-table-wrap tr:last-child td{border-bottom:0}
+@media(max-width:700px){.article-lede{font-size:1.06rem}.article-table-wrap th,.article-table-wrap td{padding:10px 12px;font-size:13px}}
