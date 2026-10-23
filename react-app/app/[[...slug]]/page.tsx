@@ -15,6 +15,21 @@ type Props = { params: Promise<{ slug?: string[] }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const id = resolvePageId(slug);
+  if (id === "home") {
+    return {
+      title: "DailyTechInsights | SaaS Reviews, Software Comparisons & Guides",
+      description: "Make informed software decisions with practical SaaS reviews, clear software comparisons, alternatives, and actionable business technology guides.",
+      alternates: { canonical: "https://www.dailytechinsights.com/" },
+      robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
+      openGraph: {
+        type: "website", url: "https://www.dailytechinsights.com/", siteName: "DailyTechInsights",
+        title: "DailyTechInsights | SaaS Reviews, Software Comparisons & Guides",
+        description: "Practical SaaS reviews, software comparisons, alternatives, and guides for better business software decisions.",
+        locale: "en_US",
+      },
+      twitter: { card: "summary_large_image", title: "DailyTechInsights | SaaS Reviews & Guides", description: "Practical software reviews, comparisons, alternatives, and business technology guides." },
+    };
+  }
   if (id && redesignedHubs.has(id)) {
     const titles: Record<string, string> = {
       reviews: "SaaS Reviews | DailyTechInsights", categories: "Software Categories | DailyTechInsights",
