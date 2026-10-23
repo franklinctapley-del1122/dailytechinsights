@@ -144,7 +144,6 @@ export default function WindsorAiReviewPage() {
             <ul>
               <li><strong><a href="https://supermetrics.com/" target="_blank" rel="noopener noreferrer">Supermetrics</a>:</strong> compare its connector coverage, destinations, and pricing for marketing reporting.</li>
               <li><strong><a href="https://funnel.io/" target="_blank" rel="noopener noreferrer">Funnel</a>:</strong> assess its approach to marketing data collection and normalization.</li>
-              <li><strong><a href="https://www.aggregatedata.com/" target="_blank" rel="noopener noreferrer">AggregateData</a>:</strong> investigate whether its connector and reporting options match your particular stack.</li>
               <li><strong>Native exports and connectors:</strong> for a small stack, built-in integrations or scheduled exports may be enough and could be simpler to maintain.</li>
             </ul>
             <p>These are research starting points, not a claim that one product wins every comparison. Evaluate equivalent source and account requirements, and compare current vendor pricing before deciding.</p>
