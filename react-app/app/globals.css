@@ -97,3 +97,32 @@
  .why-copy h2{font-size:32px}
  .why-point{padding:15px}
 }
+
+
+/* Shared React navigation and footer across the entire site */
+.site-header-react{position:relative;z-index:20;background:#fff;border-bottom:1px solid #e7e9f5;box-shadow:0 4px 20px #1e225208}
+.site-header-react__inner{max-width:1280px;min-height:82px;margin:0 auto;padding:12px clamp(18px,4vw,48px);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.site-header-react__brand{display:inline-flex;align-items:center;gap:10px;flex-shrink:0;color:#171b3a;text-decoration:none;font-size:21px;font-weight:850;letter-spacing:-.8px}
+.site-header-react__mark{display:grid;place-items:center;width:39px;height:39px;border-radius:13px;background:linear-gradient(135deg,#6b5cff,#24b7d9);color:#fff;font-size:25px;font-weight:900;box-shadow:0 8px 22px #5b5cf044}
+.site-header-react__accent{background:linear-gradient(100deg,#6558ee,#18a9cf);-webkit-background-clip:text;background-clip:text;color:transparent}
+.site-header-react__nav{display:flex;align-items:center;justify-content:center;gap:clamp(10px,1.55vw,23px);flex-wrap:wrap}
+.site-header-react__nav a{color:#454b68;text-decoration:none;font-size:12px;font-weight:750;transition:color .18s}
+.site-header-react__nav a:hover{color:#6359ec}
+.site-header-react__cta{display:inline-flex;align-items:center;gap:9px;padding:11px 15px;border-radius:11px;background:linear-gradient(110deg,#6258ef,#3e8bea);color:#fff;text-decoration:none;font-size:12px;font-weight:800;white-space:nowrap;box-shadow:0 7px 18px #5a5bec30;transition:transform .18s,box-shadow .18s}
+.site-header-react__cta:hover{transform:translateY(-2px);box-shadow:0 11px 24px #5a5bec40}
+.site-header-react a:focus-visible,.site-footer-react a:focus-visible{outline:3px solid #a6a0ff;outline-offset:4px;border-radius:5px}
+.site-footer-react{position:relative;overflow:hidden;background:radial-gradient(ellipse at 95% 0%,#4d4a9a 0%,transparent 36%),linear-gradient(125deg,#11152f,#1e234a 65%,#173b56);color:#d5daf1;padding:48px 24px 22px}
+.site-footer-react__inner{max-width:1200px;margin:0 auto}
+.site-footer-react__top{display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.7fr);gap:44px;align-items:start}
+.site-footer-react__brand{color:#fff;text-decoration:none;font-size:24px;font-weight:850;letter-spacing:-.8px}
+.site-footer-react__brand span{color:#8bbcff}
+.site-footer-react__intro p{max-width:350px;margin:12px 0 0;color:#c4c9e4;font-size:13px;line-height:1.8}
+.site-footer-react__links{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.site-footer-react__links a,.site-footer-react__resources a{color:#d5daf1;text-decoration:none;font-size:12px;line-height:1.7;transition:color .18s}
+.site-footer-react__links a:hover,.site-footer-react__resources a:hover{color:#a6f2e0}
+.site-footer-react__resources{display:flex;align-items:center;flex-wrap:wrap;gap:9px 17px;margin-top:30px;padding:21px 0;border-top:1px solid #ffffff20;border-bottom:1px solid #ffffff20}
+.site-footer-react__resources strong{width:100%;color:#fff;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.site-footer-react__bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:19px;color:#aeb5d5;font-size:11px}
+@media(max-width:1000px){.site-header-react__inner{gap:15px}.site-header-react__nav{gap:9px 13px}.site-header-react__nav a{font-size:11px}.site-header-react__cta{padding:10px 12px}}
+@media(max-width:760px){.site-header-react__inner{justify-content:center;gap:13px;padding:14px 16px}.site-header-react__brand{font-size:20px}.site-header-react__nav{order:3;width:100%;gap:9px 17px;padding-top:4px}.site-header-react__nav a{font-size:12px}.site-header-react__cta{font-size:11px}.site-footer-react{padding:38px 20px 20px}.site-footer-react__top{grid-template-columns:1fr;gap:25px}.site-footer-react__resources{margin-top:24px}}
+@media(max-width:420px){.site-header-react__inner{gap:10px}.site-header-react__mark{width:34px;height:34px}.site-header-react__brand{font-size:18px}.site-header-react__cta{padding:9px 10px}.site-footer-react__bottom{display:grid;gap:8px}}
