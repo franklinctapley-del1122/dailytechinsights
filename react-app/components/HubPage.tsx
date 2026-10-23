@@ -28,6 +28,7 @@ const configs: Record<string, HubConfig> = {
       { title: "Semrush Review", category: "SEO & marketing", description: "Review SEO and digital marketing capabilities for keyword and competitor research.", href: "/reviews/semrush-review/", cta: "Read Semrush review", icon: "S", tone: "orange" },
       { title: "Slack Review", category: "Team communication", description: "Consider messaging and collaboration workflows for teams and organizations.", href: "/reviews/slack-review/", cta: "Read Slack review", icon: "#", tone: "green" },
       { title: "Pipedrive Review", category: "CRM & sales", description: "Explore sales pipeline management and tools for organizing deals and follow-ups.", href: "/reviews/pipedrive-review/", cta: "Read Pipedrive review", icon: "P", tone: "violet" },
+      { title: "Windsor.ai Review", category: "Data integration & analytics", description: "Assess cross-channel data connectors, reporting destinations, pricing limits, and workflow fit.", href: "/reviews/windsor-ai-review/", cta: "Read Windsor.ai review", icon: "W", tone: "green" },
     ],
     topicsTitle: "Browse review topics", topics: sharedTopics,
     relatedTitle: "Continue your software research",
