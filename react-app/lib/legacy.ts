@@ -22,6 +22,15 @@ function firstMatch(source: string, pattern: RegExp, fallback = ""): string {
   return pattern.exec(source)?.[1]?.trim() ?? fallback;
 }
 
+function decodeEntities(value: string): string {
+  return value
+    .replace(/&amp;/gi, "&")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;|&apos;/gi, "'")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">");
+}
+
 export function resolvePageId(slug?: string[]): PageId | undefined {
   const key = (slug ?? []).join("/");
   const id = key || "home";
@@ -32,10 +41,10 @@ export function getLegacyPage(id: PageId): LegacyPageData {
   const source = sourceMap[id] ?? "";
   const head = firstMatch(source, /<head\b[^>]*>([\s\S]*?)<\/head>/i);
   const body = firstMatch(source, /<body\b[^>]*>([\s\S]*?)<\/body>/i);
-  const title = firstMatch(head, /<title[^>]*>([\s\S]*?)<\/title>/i, "DailyTechInsights");
-  const description = firstMatch(head, /<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["'][^>]*>/i,
-    firstMatch(head, /<meta[^>]*content=["']([^"']*)["'][^>]*name=["']description["'][^>]*>/i, ""));
-  const canonicalFallback = id === "home" ? "https://www.dailytechinsights.com/" : \`https://www.dailytechinsights.com/\${id}/\`;
+  const title = decodeEntities(firstMatch(head, /<title[^>]*>([\s\S]*?)<\/title>/i, "DailyTechInsights"));
+  const description = decodeEntities(firstMatch(head, /<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["'][^>]*>/i,
+    firstMatch(head, /<meta[^>]*content=["']([^"']*)["'][^>]*name=["']description["'][^>]*>/i, "")));
+  const canonicalFallback = id === "home" ? "https://www.dailytechinsights.com/" : "https://www.dailytechinsights.com/" + id + "/";
   const canonical = firstMatch(head, /<link[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["'][^>]*>/i, canonicalFallback);
   const robots = firstMatch(head, /<meta[^>]*name=["']robots["'][^>]*content=["']([^"']*)["'][^>]*>/i, "index,follow");
   const styles = [...head.matchAll(/<style\b[^>]*>([\s\S]*?)<\/style>/gi)].map((match) => match[1]).join("\n");
