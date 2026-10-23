@@ -16,17 +16,6 @@ const mainLinks = [
   ["Affiliate Disclosure", "/affiliate-disclosure/"],
 ];
 
-const popularGuides = [
-  ["How to Choose SaaS Software", "/guides/how-to-choose-saas-software/"],
-  ["How to Compare Software", "/guides/how-to-compare-software/"],
-  ["Project Management Software Guide", "/guides/what-is-project-management-software/"],
-  ["Project vs Task Management", "/guides/project-management-vs-task-management/"],
-  ["What Is CRM Software?", "/guides/what-is-crm-software/"],
-  ["Marketing Automation Guide", "/guides/what-is-marketing-automation/"],
-  ["ClickUp vs Notion", "/comparisons/clickup-vs-notion/"],
-  ["Best Project Management Software", "/best/project-management-software/"],
-];
-
 export default function SiteFooter() {
   return (
     <footer className="site-footer-react">
@@ -39,10 +28,6 @@ export default function SiteFooter() {
           <nav className="site-footer-react__links" aria-label="Footer navigation">
             {mainLinks.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
           </nav>
-        </div>
-        <div className="site-footer-react__resources">
-          <strong>Popular guides</strong>
-          {popularGuides.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
         </div>
         <div className="site-footer-react__bottom">
           <span>© {new Date().getFullYear()} DailyTechInsights. All rights reserved.</span>
