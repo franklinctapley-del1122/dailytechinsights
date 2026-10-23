@@ -1,4 +1,5 @@
-"use client";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
 const categories = [
   { icon: "✦", title: "AI & Automation", detail: "Find tools that reduce repetitive work and connect your workflows.", href: "/reviews/" },
@@ -12,17 +13,7 @@ const categories = [
 export default function ModernHome() {
   return (
     <main className="modern-home">
-      <header className="modern-header">
-        <a className="modern-brand" href="/" aria-label="DailyTechInsights home">
-          <span className="brand-mark">d</span><span>DailyTech<span className="brand-accent">Insights</span></span>
-        </a>
-        <nav className="modern-nav" aria-label="Main navigation">
-          <a href="/reviews/">Reviews</a>
-          <a href="/guides/project-management-vs-task-management/">Guides</a>
-          <a href="#categories">Categories</a>
-        </nav>
-        <a className="header-cta" href="/reviews/">Explore software <span aria-hidden="true">↗</span></a>
-      </header>
+      <SiteHeader />
 
       <section className="modern-hero">
         <div className="hero-glow hero-glow-one" aria-hidden="true" />
@@ -106,7 +97,7 @@ export default function ModernHome() {
         <a className="button button-light" href="/reviews/">Explore the library <span aria-hidden="true">→</span></a>
       </section>
 
-      <footer className="modern-footer"><a className="modern-brand footer-brand" href="/"><span className="brand-mark">d</span><span>DailyTech<span className="brand-accent">Insights</span></span></a><p>Practical SaaS research for smarter business decisions.</p><div><a href="/reviews/">Reviews</a><a href="/guides/project-management-vs-task-management/">Guides</a><a href="#categories">Categories</a></div><small>© {new Date().getFullYear()} DailyTechInsights. Research before you choose.</small></footer>
+      <SiteFooter />
     </main>
   );
 }
