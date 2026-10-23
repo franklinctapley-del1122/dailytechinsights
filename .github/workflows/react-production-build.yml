@@ -1,0 +1,23 @@
+name: React production build
+on:
+  push:
+    branches: [main, react-production-migration]
+  pull_request:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Build production static site
+        run: npm run build
+      - name: Verify important routes and SEO files were exported
+        run: |
+          test -f react-app/out/index.html
+          test -f react-app/out/reviews/index.html
+          test -f react-app/out/guides/project-management-vs-task-management/index.html
+          test -f react-app/out/robots.txt
+          test -f react-app/out/sitemap.xml

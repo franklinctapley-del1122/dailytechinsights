@@ -1,0 +1,7 @@
+{
+  "name": "dailytechinsights-production",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix react-app install && npm --prefix react-app run build"
+  }
+}
