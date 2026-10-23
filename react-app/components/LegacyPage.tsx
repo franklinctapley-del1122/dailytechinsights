@@ -1,3 +1,5 @@
+import parse from "html-react-parser";
+import type { ReactNode } from "react";
 import { getLegacyPage, type PageId } from "@/lib/legacy";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -12,7 +14,7 @@ export default function LegacyPage({ id }: { id: PageId }) {
       {page.styles ? <style dangerouslySetInnerHTML={{ __html: page.styles }} /> : null}
       {page.jsonLd.map((schema, index) => <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: schema }} />)}
       <SiteHeader />
-      <main className="legacy-document" dangerouslySetInnerHTML={{ __html: body }} />
+      <main className="legacy-document">{parse(body) as ReactNode}</main>
       <SiteFooter />
     </>
   );
