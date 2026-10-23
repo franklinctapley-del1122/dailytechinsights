@@ -29,7 +29,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       best: "Discover curated software picks for common business needs, workflows, and practical use cases.",
       guides: "Read practical software guides and explainers to understand tools, improve workflows, and make better software decisions.",
     };
-    return { title: titles[id], description: descriptions[id], alternates: { canonical: `https://www.dailytechinsights.com/${id}/` } };
+    return {
+      title: titles[id],
+      description: descriptions[id],
+      alternates: { canonical: `https://www.dailytechinsights.com/${id}/` },
+      robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
+      openGraph: { type: "website", url: `https://www.dailytechinsights.com/${id}/`, siteName: "DailyTechInsights", title: titles[id], description: descriptions[id], locale: "en_US" },
+      twitter: { card: "summary_large_image", title: titles[id], description: descriptions[id] },
+    };
   }
   return id ? getLegacyMetadata(id) : { title: "Page not found | DailyTechInsights", robots: { index: false, follow: false } };
 }
