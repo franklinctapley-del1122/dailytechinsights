@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound() { return <main style={{maxWidth:760,margin:"72px auto",padding:24}}><p style={{color:"#2563eb",fontWeight:800}}>404 · Page not found</p><h1>We couldn’t find that page.</h1><p>The React migration pilot includes only a small set of test routes. The existing production site remains unchanged.</p><Link href="/">Return to the homepage</Link></main>; }

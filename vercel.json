@@ -1,5 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "other",
+  "installCommand": "npm install --ignore-scripts",
+  "buildCommand": "npm run build",
+  "outputDirectory": "react-app/out",
   "trailingSlash": true,
   "redirects": [
     {

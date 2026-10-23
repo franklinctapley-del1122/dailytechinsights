@@ -1,0 +1,7 @@
+{
+  "name": "dailytechinsights-production",
+  "private": true,
+  "scripts": {
+    "build": "node react-app/scripts/prepare-site.mjs && npm --prefix react-app install && npm --prefix react-app run build"
+  }
+}
