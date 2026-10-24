@@ -7,6 +7,7 @@ const links = [
   { label: "Alternatives", href: "/alternatives/" },
   { label: "Best Software", href: "/best/" },
   { label: "Guides", href: "/guides/" },
+  { label: "Free Tools", href: "/tools/" },
 ];
 
 export default function SiteHeader() {
@@ -20,7 +21,7 @@ export default function SiteHeader() {
         <nav className="site-header-react__nav" aria-label="Primary navigation">
           {links.map((link) => <Link key={link.href} href={link.href}>{link.label}</Link>)}
         </nav>
-        <Link className="site-header-react__cta" href="/reviews/">Explore software <span aria-hidden="true">↗</span></Link>
+        <Link className="site-header-react__cta" href="/tools/">Free tools <span aria-hidden="true">↗</span></Link>
       </div>
     </header>
   );
