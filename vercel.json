@@ -10,10 +10,10 @@
       "has": [
         {
           "type": "host",
-          "value": "dailytechinsights.com"
+          "value": "www.dailytechinsights.com"
         }
       ],
-      "destination": "https://www.dailytechinsights.com/:path*",
+      "destination": "https://dailytechinsights.com/:path*",
       "permanent": true
     },
     {
