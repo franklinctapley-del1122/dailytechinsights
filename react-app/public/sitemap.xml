@@ -383,4 +383,12 @@
     <priority>0.7</priority>
   </url>
 
+
+  <!-- Document tools -->
+  <url>
+    <loc>https://www.dailytechinsights.com/tools/word-to-pdf-converter/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
