@@ -10,7 +10,7 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^(www\.)?dailytechinsights\.com$ [NC]
 RewriteCond %{HTTPS} !=on [OR]
 RewriteCond %{HTTP_HOST} !^www\.dailytechinsights\.com$ [NC]
-RewriteRule ^ https://www.dailytechinsights.com%{REQUEST_URI} [R=301,L,NE]
+RewriteRule ^ https://www.dailytechinsights.com%{REQUEST_URI} [R=308,L,NE]
 
 # 2) Redirect explicit index.html URLs to their directory URL.
 # THE_REQUEST prevents redirecting internal subrequests.
