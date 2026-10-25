@@ -376,4 +376,4 @@
   <url><loc>https://www.dailytechinsights.com/tools/reading-time-calculator/</loc><lastmod>2026-10-25</lastmod><priority>0.7</priority></url>
   <url><loc>https://www.dailytechinsights.com/tools/roi-calculator/</loc><lastmod>2026-10-25</lastmod><priority>0.7</priority></url>
 
-</urlset>
+  <!-- Free browser-based tools -->\n  <url>\n    <loc>https://www.dailytechinsights.com/tools/image-to-webp-converter/</loc>\n    <lastmod>2026-10-25</lastmod>\n    <priority>0.7</priority>\n  </url>\n\n</urlset>
