@@ -4,6 +4,28 @@ import { useMemo, useState } from "react";
 
 type Tool = "directory" | "word" | "reading" | "roi";
 const css = `
+@keyframes tool-fade-up{from{opacity:0;transform:translate3d(0,16px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes tool-soft-glow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.tools-shell{animation:tool-fade-up .55s cubic-bezier(.2,.75,.25,1) both}
+.tools-hero{background:linear-gradient(120deg,#eef2ff,#fff 42%,#f0f9ff 72%,#f5f3ff);background-size:220% 220%;animation:tool-fade-up .65s cubic-bezier(.2,.75,.25,1) both,tool-soft-glow 14s ease-in-out infinite}
+.tools-hero .kicker{box-shadow:0 5px 18px #2563eb12;transition:transform .22s,box-shadow .22s}
+.tools-hero .kicker:hover{transform:translateY(-2px);box-shadow:0 8px 22px #2563eb20}
+.tools-hero h1{animation:tool-fade-up .7s .08s both}
+.tools-hero p{animation:tool-fade-up .7s .16s both}
+.tools-panel{transition:transform .25s cubic-bezier(.2,.75,.25,1),box-shadow .25s,border-color .25s;animation:tool-fade-up .6s .08s both}
+.tools-panel:hover{border-color:#d8defa;box-shadow:0 14px 35px #243b6910}
+.tools-card{position:relative;overflow:hidden;background:linear-gradient(145deg,#fff,#fcfdff);transition:transform .25s cubic-bezier(.2,.75,.25,1),box-shadow .25s,border-color .25s}
+.tools-card:before{content:"";position:absolute;inset:0;opacity:0;background:radial-gradient(circle at top right,#dbeafe88,transparent 62%);transition:opacity .25s;pointer-events:none}
+.tools-card:hover{transform:translateY(-5px);box-shadow:0 16px 34px #1d4ed814;border-color:#a5bfff}
+.tools-card:hover:before{opacity:1}
+.tools-card .icon,.tools-card h2,.tools-card p{position:relative}
+.tools-stat{transition:transform .2s,box-shadow .2s,border-color .2s}
+.tools-stat:hover{transform:translateY(-3px);border-color:#c7d2fe;box-shadow:0 8px 20px #1d4ed80c}
+.tools-btn{transition:transform .18s,box-shadow .18s,background .18s}
+.tools-btn:hover{transform:translateY(-2px);box-shadow:0 7px 18px #2563eb30}
+.tools-btn:active{transform:translateY(0) scale(.98)}
+.tools-result{animation:tool-fade-up .35s ease-out both}
+@media(prefers-reduced-motion:reduce){.tools-shell,.tools-hero,.tools-hero h1,.tools-hero p,.tools-panel,.tools-result{animation:none!important}.tools-card,.tools-btn,.tools-stat,.tools-panel,.tools-hero .kicker{transition:none!important}}
 .tools-shell{max-width:1080px;margin:0 auto;padding:0 22px 64px;color:#374151}
 .tools-hero{padding:54px 20px 46px;text-align:center;background:linear-gradient(135deg,#eff6ff,#fff 60%,#f8fafc);border-bottom:1px solid #e8edf5;margin-bottom:30px}
 .tools-hero .kicker{display:inline-block;background:#dbeafe;color:#1d4ed8;border-radius:999px;padding:5px 11px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
