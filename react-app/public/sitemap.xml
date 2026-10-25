@@ -384,6 +384,13 @@
   </url>
 
 
+  <!-- SEO tools -->
+  <url>
+    <loc>https://www.dailytechinsights.com/tools/meta-title-description-checker/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Document tools -->
   <url>
     <loc>https://www.dailytechinsights.com/tools/word-to-pdf-converter/</loc>
