@@ -6,7 +6,7 @@ declare global {
   interface Window {
     mammoth?: {
       convertToHtml: (input: { arrayBuffer: ArrayBuffer }, options?: Record<string, unknown>) => Promise<{ value: string; messages: Array<{ message?: string }> }>;
-      images: { imgElement: (handler: (image: { contentType: string; read: (encoding: string) => Promise<{ base64: string }> }) => Promise<{ src: string }>) => unknown };
+      images: { imgElement: (handler: (image: { contentType: string; read: (encoding: string) => Promise<string> }) => Promise<{ src: string }>) => unknown };
     };
     html2pdf?: (element: HTMLElement, options?: Record<string, unknown>) => { set: (options: Record<string, unknown>) => { from: (element: HTMLElement) => { save: () => Promise<void> } } };
   }
@@ -76,7 +76,7 @@ export default function WordToPdfClient() {
       const buffer = await file.arrayBuffer();
       const result = await window.mammoth.convertToHtml(
         { arrayBuffer: buffer },
-        { convertImage: window.mammoth.images.imgElement((image) => image.read("base64").then(data => ({ src: "data:" + image.contentType + ";base64," + data.base64 }))) }
+        { convertImage: window.mammoth.images.imgElement((image) => image.read("base64").then(data => ({ src: "data:" + image.contentType + ";base64," + data }))) }
       );
       const holder = document.createElement("div");
       holder.innerHTML = result.value;
