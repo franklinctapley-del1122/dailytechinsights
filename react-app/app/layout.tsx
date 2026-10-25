@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./homepage-polish.css";
 
-const siteUrl = "https://dailytechinsights.com";
+const siteUrl = "https://www.dailytechinsights.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
