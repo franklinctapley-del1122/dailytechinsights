@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./homepage-polish.css";
 
 const siteUrl = "https://www.dailytechinsights.com";
 
