@@ -69,6 +69,38 @@ export default function ModernHome() {
         </div>
       </section>
 
+      <section className="dti-tools-preview" aria-labelledby="dti-tools-title">
+        <div className="dti-tools-orb dti-tools-orb-one" aria-hidden="true" />
+        <div className="dti-tools-orb dti-tools-orb-two" aria-hidden="true" />
+        <div className="dti-tools-inner">
+          <div className="dti-tools-heading">
+            <div>
+              <div className="section-eyebrow">FREE TOOLS · NO SIGN-UP REQUIRED</div>
+              <h2 id="dti-tools-title">Useful tools. <span>Instant answers.</span></h2>
+            </div>
+            <p>Get quick, practical answers for writing and software decisions with free tools that work right in your browser.</p>
+          </div>
+          <div className="dti-tools-grid">
+            <a className="dti-tool-card dti-tool-word" href="/tools/word-counter/">
+              <span className="dti-tool-icon" aria-hidden="true">✍️</span><span className="dti-tool-tag">FOR WRITERS</span>
+              <h3>Word Counter</h3><p>Count words, characters, sentences and paragraphs while you write or edit.</p>
+              <span className="dti-tool-link">Count your words <b aria-hidden="true">↗</b></span>
+            </a>
+            <a className="dti-tool-card dti-tool-reading" href="/tools/reading-time-calculator/">
+              <span className="dti-tool-icon" aria-hidden="true">⏱️</span><span className="dti-tool-tag">FOR CONTENT TEAMS</span>
+              <h3>Reading Time Calculator</h3><p>Estimate how long an article or draft may take your audience to read.</p>
+              <span className="dti-tool-link">Estimate reading time <b aria-hidden="true">↗</b></span>
+            </a>
+            <a className="dti-tool-card dti-tool-roi" href="/tools/roi-calculator/">
+              <span className="dti-tool-icon" aria-hidden="true">📊</span><span className="dti-tool-tag">FOR BUSINESS</span>
+              <h3>SaaS ROI Calculator</h3><p>Model potential time savings, annual software costs and estimated return.</p>
+              <span className="dti-tool-link">Calculate potential ROI <b aria-hidden="true">↗</b></span>
+            </a>
+          </div>
+          <div className="dti-tools-footer"><span><i aria-hidden="true">✓</i> Free to use</span><span><i aria-hidden="true">✓</i> No account needed</span><span><i aria-hidden="true">✓</i> Simple, practical results</span><a href="/tools/">Explore all free tools <b aria-hidden="true">→</b></a></div>
+        </div>
+      </section>
+
       <section className="why-section" aria-labelledby="why-title">
         <div className="why-inner">
           <div className="why-copy">
