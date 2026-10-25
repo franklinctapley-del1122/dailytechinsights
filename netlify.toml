@@ -1,12 +1,14 @@
 # Netlify configuration for DailyTechInsights
 # Canonical domain: https://dailytechinsights.com/
 
+# Redirect the www hostname to the canonical non-www hostname.
 [[redirects]]
-  from = "https://dailytechinsights.com/*"
+  from = "https://www.dailytechinsights.com/*"
   to = "https://dailytechinsights.com/:splat"
   status = 301
   force = true
 
+# Redirect the Netlify subdomain to the canonical custom domain.
 [[redirects]]
   from = "https://dailytechinsights.netlify.app/*"
   to = "https://dailytechinsights.com/:splat"
