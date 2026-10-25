@@ -5,7 +5,7 @@
 [[redirects]]
   from = "https://dailytechinsights.com/*"
   to = "https://www.dailytechinsights.com/:splat"
-  status = 301
+  status = 308
   force = true
 
 # Redirect the Netlify subdomain to the canonical custom domain.
