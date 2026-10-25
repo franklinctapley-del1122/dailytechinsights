@@ -230,3 +230,32 @@
 .article-table-wrap th{background:#f5f7fb;color:#24324b;font-weight:750}
 .article-table-wrap tr:last-child td{border-bottom:0}
 @media(max-width:700px){.article-lede{font-size:1.06rem}.article-table-wrap th,.article-table-wrap td{padding:10px 12px;font-size:13px}}
+
+/* Smooth, lightweight motion polish for the homepage */
+@keyframes dti-fade-up{from{opacity:0;transform:translate3d(0,22px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes dti-float{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-10px,0)}}
+@keyframes dti-glow-drift{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(16px,-12px,0) scale(1.06)}}
+@keyframes dti-pulse-dot{0%,100%{box-shadow:0 0 0 4px #a6ffcf24}50%{box-shadow:0 0 0 8px #a6ffcf08}}
+.modern-hero .eyebrow{animation:dti-fade-up .65s cubic-bezier(.2,.75,.25,1) both}
+.modern-hero h1{animation:dti-fade-up .75s .08s cubic-bezier(.2,.75,.25,1) both}
+.modern-hero .hero-copy{animation:dti-fade-up .75s .16s cubic-bezier(.2,.75,.25,1) both}
+.modern-hero .hero-actions{animation:dti-fade-up .75s .24s cubic-bezier(.2,.75,.25,1) both}
+.modern-hero .hero-proof,.modern-hero .hero-floating-tags{animation:dti-fade-up .75s .32s cubic-bezier(.2,.75,.25,1) both}
+.modern-hero .product-window{animation:dti-fade-up .9s .22s cubic-bezier(.2,.75,.25,1) both}
+.modern-hero .hero-glow-one{animation:dti-glow-drift 12s ease-in-out infinite}
+.modern-hero .hero-glow-two{animation:dti-glow-drift 15s ease-in-out infinite reverse}
+.modern-hero .eyebrow-dot{animation:dti-pulse-dot 2.8s ease-in-out infinite}
+.modern-hero .window-card{transition:transform .25s cubic-bezier(.2,.75,.25,1),box-shadow .25s,border-color .25s}
+.modern-hero .window-card:hover{transform:translateY(-5px) scale(1.015)}
+.modern-home .category-card,.modern-home .featured-card,.modern-home .why-point{transition:transform .28s cubic-bezier(.2,.75,.25,1),box-shadow .28s,border-color .28s}
+.modern-home .category-card:hover,.modern-home .featured-card:hover{transform:translateY(-5px)}
+.modern-home .featured-art .salesforce-cloud{animation:dti-float 5s ease-in-out infinite}
+.modern-home .guide-board{transition:transform .35s cubic-bezier(.2,.75,.25,1)}
+.modern-home .featured-guide:hover .guide-board{transform:rotate(0) translateY(-3px)}
+.modern-home .modern-bottom-cta{position:relative;overflow:hidden}
+.modern-home .modern-bottom-cta:after{content:"";position:absolute;top:-80%;left:-35%;width:25%;height:260%;transform:rotate(24deg);background:linear-gradient(90deg,transparent,#ffffff12,transparent);transition:left .7s ease;pointer-events:none}
+.modern-home .modern-bottom-cta:hover:after{left:120%}
+.site-header-react{transition:box-shadow .25s,border-color .25s}
+.site-header-react__nav a{transition:color .2s,background .2s,transform .2s}
+.site-header-react__nav a:hover{transform:translateY(-1px)}
+@media(prefers-reduced-motion:reduce){.modern-home *,.site-header-react *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
