@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   },
   description: "Make informed software decisions with practical SaaS reviews, software comparisons, alternatives, best-software guides, and actionable business technology insights.",
   applicationName: "DailyTechInsights",
-  verification: { google: "Pv_UuVYvtmezG-DU5mL1RheV087OKcYTJXaOo4ipgGg" },
   category: "technology",
   alternates: { canonical: "/" },
   robots: {
