@@ -2,6 +2,6 @@
   "name": "dailytechinsights-production",
   "private": true,
   "scripts": {
-    "build": "npm --prefix react-app install && npm --prefix react-app run build"
+    "build": "npm --prefix react-app install && npm --prefix react-app run build && node scripts/merge-legacy-static.mjs"
   }
 }
